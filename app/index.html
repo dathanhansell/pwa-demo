@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PwaDemo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link rel="manifest" href="{{rootURL}}manifest.webmanifest">
+    <meta name="msapplication-config" content="{{rootURL}}browserconfig.xml">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+    {{content-for "head-footer"}}
+  </head>
+    {{content-for "body"}}
+    <script src="{{rootURL}}hotkeys.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/pwa-demo.js"></script>
+    <script src="https://unpkg.com/@gauntface/dpad-nav@3.0.1/build/helper/helper/dpad.js" async defer></script>
+    <script src="https://unpkg.com/@gauntface/dpad-nav@3.0.1/build/helper/helper/dpad-debugger.js" async defer></script>
+    {{content-for "body-footer"}}
+  </body>
+</html>
