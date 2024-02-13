@@ -4,7 +4,7 @@ module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'pwa-demo',
     environment,
-    rootURL: '/',
+    rootURL: '/pwa-demo/',
     locationType: 'history',
     EmberENV: {
       EXTEND_PROTOTYPES: false,
