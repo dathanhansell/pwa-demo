@@ -2,6 +2,9 @@ addEventListener("keydown", (e) => {
   const keycode = (e.keyCode ? e.keyCode : e.which);
   console.log(keycode)
   switch (keycode){
+    case 69:
+      window.dpaddebug.toggleDebugMode();
+      break;
     case 48:
       document.getElementById("c0").focus();
       document.activeElement.click();
