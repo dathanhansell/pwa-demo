@@ -27,8 +27,8 @@ function activateHotkeyElement(n, e, prev) {
   e.preventDefault();
 }
 //todo fix hacky solution
-addEventListener('popstate', () => {
-  console.log('popstate');
+addEventListener('hashchange', () => {
+  console.log('hashchange');
   setTimeout(checkDOMChange, 200);
 });
 addEventListener('load', () => {

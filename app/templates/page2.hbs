@@ -1,0 +1,25 @@
+{{page-title "Page2"}}
+
+<div class="container theme-showcase" role="main">
+
+  {{!-- Main jumbotron for a primary marketing message or call to action --}}
+  <div class="jumbotron">
+    <h1>Page2</h1>
+    <p>Second Page</p>
+  </div>
+
+
+  <div class="page-header">
+    <h1>Buttons</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <LinkTo id="c0" class=" btn dpad-focusable btn-danger" tabindex="0" @route="page1" >
+        0: To Index
+      </LinkTo>
+      <button class=" btn dpad-focusable btn-danger" tabindex="0" type="button">Button</button>
+    </div>
+  </div>
+</div>
+{{outlet}}
